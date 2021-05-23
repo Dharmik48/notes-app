@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>TakeNotes</title>
+  </head>
+  <body>
+    <aside>
+      <h2>Docket</h2>
+      <div class="add-note">
+        <button class="add-note-btn" id="add-note-btn">
+          <i class="fas fa-plus"></i>
+        </button>
+        <div class="add-note-colors">
+          <div style="--order: 1" class="hidden" data-color="yellow"></div>
+          <div style="--order: 2" class="hidden" data-color="orange"></div>
+          <div style="--order: 3" class="hidden" data-color="purple"></div>
+          <div style="--order: 4" class="hidden" data-color="blue"></div>
+          <div style="--order: 5" class="hidden" data-color="green"></div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <form>
+        <i class="fas fa-search"></i>
+        <input type="text" name="search" class="search" placeholder="Search" />
+      </form>
+      <h1>Notes.</h1>
+      <div class="notes-container">
+        <!-- <div class="note">
+          <textarea class="note-text" placeholder="Your note here"> </textarea>
+          <i class="fas fa-trash"></i>
+        </div> -->
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
